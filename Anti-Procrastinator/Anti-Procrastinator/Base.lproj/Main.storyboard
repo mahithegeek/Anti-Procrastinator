@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ceE-P9-0wc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Anti_Procrastinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-Qo-8yB">
+                                <rect key="frame" x="86" y="240.5" width="203" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1W-gu-kEC">
+                                        <rect key="frame" x="0.0" y="0.0" width="203" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Start a pomodoro">
+                                            <color key="titleColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="dae-zw-nVH" kind="show" id="Ytv-Ve-lYi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYZ-yN-um2">
+                                        <rect key="frame" x="0.0" y="72" width="203" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Productive Hours">
+                                            <color key="titleColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-UT-JCd">
+                                        <rect key="frame" x="41.5" y="144" width="120" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Fun Hours">
+                                            <color key="titleColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1184430306" green="0.58389837450000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dHZ-Qo-8yB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KG6-hP-Oxp"/>
+                            <constraint firstItem="dHZ-Qo-8yB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x5b-S2-y0L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d3N-3D-VdK"/>
+                    <connections>
+                        <outlet property="funHours" destination="gMC-UT-JCd" id="8LY-Wl-N5u"/>
+                        <outlet property="pomodoroButton" destination="f1W-gu-kEC" id="ohQ-IH-D2P"/>
+                        <outlet property="productiveHours" destination="xYZ-yN-um2" id="IrU-bD-YCV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="25.637181409295355"/>
+        </scene>
+        <!--Pomodoro View Controller-->
+        <scene sceneID="iOH-uZ-82c">
+            <objects>
+                <viewController id="dae-zw-nVH" customClass="PomodoroViewController" customModule="Anti_Procrastinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pCO-NH-oPO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EJP-QS-TBu">
+                                <rect key="frame" x="90.5" y="262.5" width="194.5" height="142"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 : 00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-Ei-et9">
+                                        <rect key="frame" x="0.0" y="0.0" width="194.5" height="72"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                        <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO2-p7-ym4">
+                                        <rect key="frame" x="72" y="92" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="cYY-Nz-xIe"/>
+                                            <constraint firstAttribute="height" constant="50" id="hBx-y7-KbK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Pause"/>
+                                        <connections>
+                                            <action selector="pauseButtonClicked" destination="dae-zw-nVH" eventType="touchUpInside" id="j7w-Qr-cUc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1184430306" green="0.58389837450000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EJP-QS-TBu" firstAttribute="centerY" secondItem="pCO-NH-oPO" secondAttribute="centerY" id="Vnj-Aq-fdO"/>
+                            <constraint firstItem="EJP-QS-TBu" firstAttribute="centerX" secondItem="pCO-NH-oPO" secondAttribute="centerX" id="gmc-RV-SwB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hXT-6B-teZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="NO2-p7-ym4" id="gRo-0i-j8L"/>
+                        <outlet property="timerLabel" destination="Egf-Ei-et9" id="B80-Mb-lk5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdl-j5-Xgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1632.8" y="19.340329835082461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="By5-pT-ykR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ceE-P9-0wc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l0F-Ni-hf0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Y6B-GT-Qpd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YyL-F8-pUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="-678.71064467766121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pause" width="256" height="256"/>
+    </resources>
+</document>
