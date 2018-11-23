@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C80D1C4421A7D5FE0082CBF3 /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */; };
+		C80D1C6921A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6721A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld */; };
+		C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */; };
+		C80D1C6F21A7F2310082CBF3 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */; };
+		C80D1C7121A7FDC80082CBF3 /* ProductiveHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */; };
 		C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */; };
 		C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */; };
 		C85B1FC321A6A8EC00EE267D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC121A6A8EC00EE267D /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
+		C80D1C6821A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Anti-Procrastinator.xcdatamodel"; sourceTree = "<group>"; };
+		C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageLayer.swift; sourceTree = "<group>"; };
+		C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
+		C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductiveHoursViewController.swift; sourceTree = "<group>"; };
 		C85B1FBA21A6A8EC00EE267D /* Anti-Procrastinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anti-Procrastinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 				C85B1FC921A6A8ED00EE267D /* Info.plist */,
 				C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */,
 				C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */,
+				C80D1C6721A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld */,
+				C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */,
+				C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */,
+				C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */,
 			);
 			path = "Anti-Procrastinator";
 			sourceTree = "<group>";
@@ -141,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80D1C6921A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld in Sources */,
 				C85B1FD021A6AD8F00EE267D /* PomodoroViewController.swift in Sources */,
 				C80D1C4421A7D5FE0082CBF3 /* PomodoroViewModel.swift in Sources */,
+				C80D1C7121A7FDC80082CBF3 /* ProductiveHoursViewController.swift in Sources */,
+				C80D1C6F21A7F2310082CBF3 /* Pomodoro.swift in Sources */,
+				C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */,
 				C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */,
 				C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */,
 			);
@@ -344,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C80D1C6721A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C80D1C6821A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodel */,
+			);
+			currentVersion = C80D1C6821A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodel */;
+			path = "Anti-Procrastinator.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C85B1FB221A6A8EC00EE267D /* Project object */;
 }

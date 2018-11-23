@@ -37,6 +37,9 @@
                                         <state key="normal" title="Productive Hours">
                                             <color key="titleColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="oeu-Vb-il2" kind="show" id="fbr-ub-ckp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-UT-JCd">
                                         <rect key="frame" x="41.5" y="144" width="120" height="42"/>
@@ -111,7 +114,112 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdl-j5-Xgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632.8" y="19.340329835082461"/>
+            <point key="canvasLocation" x="1865" y="-110"/>
+        </scene>
+        <!--Productive Hours View Controller-->
+        <scene sceneID="eMi-Jf-e3r">
+            <objects>
+                <viewController id="oeu-Vb-il2" customClass="ProductiveHoursViewController" customModule="Anti_Procrastinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RCZ-Bp-10S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="zul-mk-XbG">
+                                <rect key="frame" x="37.5" y="210" width="300" height="247"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="CLL-He-Wnw" userLabel="Completed SV">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoros Completed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-Oc-V9f">
+                                                <rect key="frame" x="0.0" y="0.0" width="201.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEb-Xu-CQm">
+                                                <rect key="frame" x="232.5" y="0.0" width="67.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="QTQ-2o-2gv" userLabel="Pomo Hours SV">
+                                        <rect key="frame" x="0.0" y="75.5" width="300" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro Hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHv-8g-Po3">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siK-3n-Vzi">
+                                                <rect key="frame" x="232.5" y="0.0" width="67.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Sdg-7P-bcb" userLabel="Manual SV">
+                                        <rect key="frame" x="0.0" y="151" width="300" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours Entered Manually:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ak0-uc-aEb">
+                                                <rect key="frame" x="0.0" y="0.0" width="201.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jE1-px-Ftb">
+                                                <rect key="frame" x="232.5" y="0.0" width="67.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="2JG-8D-ejO" userLabel="Productive Hours SV">
+                                        <rect key="frame" x="0.0" y="226.5" width="300" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Productive Hours:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8q-YK-BQI">
+                                                <rect key="frame" x="0.0" y="0.0" width="194.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-XO-Xpr">
+                                                <rect key="frame" x="232.5" y="0.0" width="67.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iEb-Xu-CQm" firstAttribute="leading" secondItem="siK-3n-Vzi" secondAttribute="leading" id="NAy-XO-Gja"/>
+                                    <constraint firstItem="mO1-XO-Xpr" firstAttribute="leading" secondItem="siK-3n-Vzi" secondAttribute="leading" id="grE-AQ-43i"/>
+                                    <constraint firstItem="jE1-px-Ftb" firstAttribute="leading" secondItem="siK-3n-Vzi" secondAttribute="leading" id="u6k-dJ-r3X"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1184430306" green="0.58389837450000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zul-mk-XbG" firstAttribute="centerY" secondItem="RCZ-Bp-10S" secondAttribute="centerY" id="KCF-Tb-Rhr"/>
+                            <constraint firstItem="zul-mk-XbG" firstAttribute="centerX" secondItem="RCZ-Bp-10S" secondAttribute="centerX" id="RVW-ck-CGk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="69O-dN-JCh"/>
+                    </view>
+                    <connections>
+                        <outlet property="completedPomodoro" destination="iEb-Xu-CQm" id="yw0-NF-h2K"/>
+                        <outlet property="manualHours" destination="jE1-px-Ftb" id="nPg-nr-Xqs"/>
+                        <outlet property="pomodoroHours" destination="siK-3n-Vzi" id="Fil-ty-aGQ"/>
+                        <outlet property="productiveHours" destination="mO1-XO-Xpr" id="PjV-zJ-dll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27G-4l-qb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885.5999999999999" y="559.97001499250382"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="By5-pT-ykR">

@@ -35,10 +35,26 @@ class PomodoroViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
+    func resetPomodoro(){
+        seconds = 1500
+    }
+    
     @objc func updateTimer(){
-        seconds = seconds - 1
-        DispatchQueue.main.async {
-            self.updateLabel()
+        if(seconds > 0){
+            seconds = seconds - 1
+            DispatchQueue.main.async {
+                self.updateLabel()
+            }
+        }
+        else{
+            stopTimer()
+            //save pomodoro
+            let count = StorageLayer.sharedInstance.getPomodoroCount()
+            print("number of Pomos \(count)")
+            let pomodoro = Pomodoro(dateCompleted: Date(), context: nil)
+            StorageLayer.sharedInstance.savePomodoro(pomodoro: pomodoro)
+            resetPomodoro()
+            startPomodoroTimer()
         }
     }
     
