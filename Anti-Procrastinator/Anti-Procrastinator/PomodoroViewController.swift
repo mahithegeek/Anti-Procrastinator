@@ -25,8 +25,39 @@ class PomodoroViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Pomodor Timer"
+        self.navigationItem.hidesBackButton = true
+        let backButtonImage = UIImage(named: "Back")
+        let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(onBackClicked))
+        self.navigationItem.leftBarButtonItem = backButton
+        
         playButton?.imageView?.contentMode = .scaleAspectFit
         startPomodoroTimer()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.isIdleTimerDisabled = true
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.isIdleTimerDisabled = false
+    }
+    
+    @objc private func onBackClicked(){
+        //ToDO: Better Message
+        let alert = UIAlertController(title: "Please Confirm!!!", message: "Are you sure to stop the current Pomodoro Timer??", preferredStyle:.alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            self.stopTimer()
+            self.navigationController?.popViewController(animated: true)
+            
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     

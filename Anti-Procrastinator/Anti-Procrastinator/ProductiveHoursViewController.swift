@@ -21,6 +21,7 @@ class ProductiveHoursViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.title = "Productive Hours"
         self.completedPomodoro?.text = String(format: "%d",StorageLayer.sharedInstance.getPomodoroCount())
         let secondsComputed = computePomodoroHours()
         
