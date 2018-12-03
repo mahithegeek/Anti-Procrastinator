@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1F8A935E97452AF2F54840 /* Pods_Anti_Procrastinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */; };
 		C80D1C4421A7D5FE0082CBF3 /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */; };
 		C80D1C6921A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6721A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld */; };
 		C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anti_Procrastinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		438880D925E71FA57E123F31 /* Pods-Anti-Procrastinator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-Procrastinator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator.release.xcconfig"; sourceTree = "<group>"; };
 		C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		C80D1C6821A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Anti-Procrastinator.xcdatamodel"; sourceTree = "<group>"; };
 		C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageLayer.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		C85B1FC721A6A8ED00EE267D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85B1FC921A6A8ED00EE267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
+		FE56A46143466004216D94C8 /* Pods-Anti-Procrastinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-Procrastinator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1F8A935E97452AF2F54840 /* Pods_Anti_Procrastinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4917CA3615DF2EB9D970CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		894BE4E8D33F9080344A1287 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE56A46143466004216D94C8 /* Pods-Anti-Procrastinator.debug.xcconfig */,
+				438880D925E71FA57E123F31 /* Pods-Anti-Procrastinator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C85B1FB121A6A8EC00EE267D = {
 			isa = PBXGroup;
 			children = (
 				C85B1FBC21A6A8EC00EE267D /* Anti-Procrastinator */,
 				C85B1FBB21A6A8EC00EE267D /* Products */,
+				894BE4E8D33F9080344A1287 /* Pods */,
+				0E4917CA3615DF2EB9D970CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C85B1FCC21A6A8ED00EE267D /* Build configuration list for PBXNativeTarget "Anti-Procrastinator" */;
 			buildPhases = (
+				20518504906272169AF7A5E6 /* [CP] Check Pods Manifest.lock */,
 				C85B1FB621A6A8EC00EE267D /* Sources */,
 				C85B1FB721A6A8EC00EE267D /* Frameworks */,
 				C85B1FB821A6A8EC00EE267D /* Resources */,
+				D0E60535855B1BCADA0D379B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,6 +173,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20518504906272169AF7A5E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anti-Procrastinator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0E60535855B1BCADA0D379B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C85B1FB621A6A8EC00EE267D /* Sources */ = {
@@ -304,6 +369,7 @@
 		};
 		C85B1FCD21A6A8ED00EE267D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE56A46143466004216D94C8 /* Pods-Anti-Procrastinator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +388,7 @@
 		};
 		C85B1FCE21A6A8ED00EE267D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438880D925E71FA57E123F31 /* Pods-Anti-Procrastinator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
