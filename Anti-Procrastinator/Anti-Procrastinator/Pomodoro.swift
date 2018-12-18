@@ -11,14 +11,16 @@ import CoreData
 
 class Pomodoro: NSManagedObject {
     @NSManaged var dateCompleted : Date?
+    @NSManaged var dateStarted : Date?
     
-    convenience init(dateCompleted:Date,context:NSManagedObjectContext?){
+    convenience init(dateStarted:Date,dateCompleted:Date,context:NSManagedObjectContext?){
         var entity : NSEntityDescription?
         if(context == nil){
             entity = NSEntityDescription.entity(forEntityName: "Pomodoro", in: StorageLayer.sharedInstance.getContext())
         }
         self.init(entity: entity!, insertInto: context)
         self.setValue(dateCompleted, forKey: "dateCompleted")
+        self.setValue(dateStarted, forKey: "dateStarted")
     }
 
 }

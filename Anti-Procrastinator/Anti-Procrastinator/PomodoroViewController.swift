@@ -23,8 +23,9 @@ class PomodoroViewController: UIViewController {
     var timer = Timer()
     var breakTimer = Timer()
     var timerState : TimerState = .stopped
-    var seconds = 5
-    var breakTimeDuration = 3
+    var seconds = 1500
+    var breakTimeDuration = 300
+    var startTimeOfPomodoro : Date = Date()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -67,10 +68,12 @@ class PomodoroViewController: UIViewController {
     
     func startPomodoroTimer(){
         timerState = .running
+        self.startTimeOfPomodoro = Date()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
     func startBreakTimer(){
+        self.breakTimeDuration = 300
         breakTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateBreakTimer), userInfo: nil, repeats: true)
     }
     
@@ -90,20 +93,38 @@ class PomodoroViewController: UIViewController {
             //save pomodoro
             let count = StorageLayer.sharedInstance.getPomodoroCount()
             print("number of Pomos \(count)")
-            let pomodoro = Pomodoro(dateCompleted: Date(), context: nil)
+            let pomodoro = Pomodoro(dateStarted:self.startTimeOfPomodoro,dateCompleted: Date(), context: nil)
             let success = StorageLayer.sharedInstance.savePomodoro(pomodoro: pomodoro)
+            if(success){
+                print("Pomodoro Saved successfully")
+            }
+            else{
+                print("Unable to Store Pomodoro Timer")
+            }
             
             //TODO : come up with nice titles
             AudioServicesPlaySystemSound(1328);
-            SCLAlertView().showSuccess("Hey Master!!!", subTitle: "Cool !!!Done with a Pomodoro!!!").setDismissBlock {
-                //show break
-                print("break time")
+            let alertView = SCLAlertView()
+            alertView.addButton("Skip Break", target: self, selector: #selector(skipbreak))
+            alertView.addButton("Go for a Break!!"){
                 self.startBreakTimer()
-                
+            }
+//            alertView.showSuccess("Hey Master!!!", subTitle: "Cool !!!Done with a Pomodoro!!!").setDismissBlock {
+//                //show break
+//                print("break time")
+//                self.startBreakTimer()
+//
+//            }
+            alertView.showSuccess("Well Done Dude!!!", subTitle: "You nailed a focused session").setDismissBlock {
+                self.onBackClicked()
             }
             resetPomodoro()
             //startPomodoroTimer()
         }
+    }
+    
+    @objc func skipbreak(){
+        startPomodoroTimer()
     }
     
     @objc func updateBreakTimer(){

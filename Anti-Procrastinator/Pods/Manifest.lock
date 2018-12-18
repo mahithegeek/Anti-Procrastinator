@@ -1,16 +1,20 @@
 PODS:
   - SCLAlertView (0.8)
+  - SwiftCharts (0.6.3)
 
 DEPENDENCIES:
   - SCLAlertView
+  - SwiftCharts (~> 0.6.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SCLAlertView
+    - SwiftCharts
 
 SPEC CHECKSUMS:
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SwiftCharts: 1535b5e228702af2c9c4d60c2a408f2f0f579fa8
 
-PODFILE CHECKSUM: 5505e62393dfa6c48b3e64f250da1a34bf6526f2
+PODFILE CHECKSUM: e5922bf0735402be57887180bcb0d52cecbde63e
 
 COCOAPODS: 1.5.3
