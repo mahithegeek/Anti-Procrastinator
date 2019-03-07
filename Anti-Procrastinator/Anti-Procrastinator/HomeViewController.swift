@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var pomodoroButton : UIButton?
     @IBOutlet weak var productiveHours : UIButton?
     @IBOutlet weak var funHours : UIButton?
+    @IBOutlet weak var taskInput : UIButton?
 
     override func viewDidLoad() {
         super.viewDidLoad()

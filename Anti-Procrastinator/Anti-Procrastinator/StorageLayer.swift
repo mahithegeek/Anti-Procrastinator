@@ -20,6 +20,7 @@ class StorageLayer {
     public func savePomodoro(pomodoro:Pomodoro)->Bool{
         let pomoDoroToSave = NSEntityDescription.insertNewObject(forEntityName: "Pomodoro", into: self.context) as! Pomodoro
         pomoDoroToSave.dateCompleted = pomodoro.dateCompleted
+        pomoDoroToSave.dateStarted = pomodoro.dateStarted
         
         do {
             try self.context.save()
@@ -46,6 +47,19 @@ class StorageLayer {
         }
         
         return pomoList.count
+    }
+    
+    public func getPomodoroRecords()->[Pomodoro] {
+        let pomoFetch = NSFetchRequest<NSManagedObject>(entityName: "Pomodoro")
+        var pomoList : [Pomodoro]
+        
+        do {
+            try pomoList = self.context.fetch(pomoFetch) as! [Pomodoro]
+        } catch {
+            fatalError("Faile to fetch Pomos: \(error)")
+        }
+        
+        return pomoList
     }
     
     

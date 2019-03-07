@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SCLAlertView
+import AVFoundation
 
 enum TimerState : Int{
     case running = 1
@@ -19,8 +21,11 @@ class PomodoroViewController: UIViewController {
     @IBOutlet weak var timerLabel : UILabel?
     @IBOutlet weak var playButton : UIButton?
     var timer = Timer()
+    var breakTimer = Timer()
     var timerState : TimerState = .stopped
     var seconds = 1500
+    var breakTimeDuration = 300
+    var startTimeOfPomodoro : Date = Date()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,18 +68,24 @@ class PomodoroViewController: UIViewController {
     
     func startPomodoroTimer(){
         timerState = .running
+        self.startTimeOfPomodoro = Date()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
+    @objc func startBreakTimer(){
+        self.breakTimeDuration = 300
+        breakTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateBreakTimer), userInfo: nil, repeats: true)
+    }
+    
     func resetPomodoro(){
-        seconds = 1500
+        self.seconds = 1500
     }
     
     @objc func updateTimer(){
-        if(seconds > 0){
-            seconds = seconds - 1
+        if(self.seconds > 0){
+            self.seconds = self.seconds - 1
             DispatchQueue.main.async {
-                self.updateLabel()
+                self.updateLabelWithTimeLeft(self.seconds)
             }
         }
         else{
@@ -82,16 +93,54 @@ class PomodoroViewController: UIViewController {
             //save pomodoro
             let count = StorageLayer.sharedInstance.getPomodoroCount()
             print("number of Pomos \(count)")
-            let pomodoro = Pomodoro(dateCompleted: Date(), context: nil)
-            StorageLayer.sharedInstance.savePomodoro(pomodoro: pomodoro)
+            let pomodoro = Pomodoro(dateStarted:self.startTimeOfPomodoro,dateCompleted: Date(), context: nil)
+            let success = StorageLayer.sharedInstance.savePomodoro(pomodoro: pomodoro)
+            if(success){
+                print("Pomodoro Saved successfully")
+            }
+            else{
+                print("Unable to Store Pomodoro Timer")
+            }
+            
+            //TODO : come up with nice titles
+            AudioServicesPlaySystemSound(1328);
+            let alertView = SCLAlertView()
+            alertView.addButton("Skip Break", target: self, selector: #selector(skipbreak))
+            alertView.addButton("Go for a break", target: self, selector: #selector(startBreakTimer))
+            alertView.addButton("Done", action: {
+                self.onBackClicked();
+            });
+            alertView.showSuccess("Well Done!!", subTitle: "What do you want to do now?");
+//            alertView.showSuccess("Well Done Dude!!!", subTitle: "You nailed a focused session").setDismissBlock {
+//                self.onBackClicked()
+//            }
             resetPomodoro()
-            startPomodoroTimer()
+            //startPomodoroTimer()
         }
     }
     
-    func updateLabel(){
-        let minutes = seconds / 60
-        let secondsRemaining = seconds - (minutes * 60)
+    @objc func skipbreak(){
+        startPomodoroTimer()
+    }
+    
+    @objc func updateBreakTimer(){
+        if(self.breakTimeDuration > 0){
+            self.breakTimeDuration = self.breakTimeDuration  - 1
+            self.updateLabelWithTimeLeft(self.breakTimeDuration)
+            
+        }
+        else{
+            self.stopBreakTimer()
+            AudioServicesPlaySystemSound(1320);
+            SCLAlertView().showWarning("Hey Dude!!!", subTitle: "Break Time Over!!!").setDismissBlock {
+                self.startPomodoroTimer()
+            }
+        }
+    }
+    
+    func updateLabelWithTimeLeft(_ timeLeft:Int){
+        let minutes = timeLeft / 60
+        let secondsRemaining = timeLeft - (minutes * 60)
         timerLabel?.text = String(format: "%d : %02d", minutes,secondsRemaining)
     }
 
@@ -118,6 +167,9 @@ class PomodoroViewController: UIViewController {
         self.timer.invalidate();
     }
     
+    func stopBreakTimer() {
+        self.breakTimer.invalidate()
+    }
     
     /*
     // MARK: - Navigation
