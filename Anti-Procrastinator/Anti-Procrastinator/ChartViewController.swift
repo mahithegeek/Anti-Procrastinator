@@ -7,73 +7,60 @@
 //
 
 import UIKit
-import SwiftCharts
+import Charts
 
 class ChartViewController: UIViewController {
 
     
+    @IBOutlet weak var barChartView: BarChartView!
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.chartView?.noDataText = "Nothing to show Yet!!!"
 
         // Do any additional setup after loading the view.
-        setChart()
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        let unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+        
+        setChart(dataPoints: months, values: unitsSold)
     }
     
-    func setChart(){
-        //var data : [BarChartDataEntry] = []
-        
-        let pomos = StorageLayer.sharedInstance.getPomodoroRecords()
-        var pomodoroDict = [String:Int]()
+    
+    func setChart(dataPoints : [String], values : [Double]){
         
         
-        for pomodoro in pomos {
-            //let dataEntry = BarChartDataEntry(
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd"
-            
-            let date = dateFormatter.string(from: pomodoro.dateCompleted!)
-            
-            guard let value = pomodoroDict[date]
-                else{
-                pomodoroDict[date] = 1
-                    continue
-            }
-            
-            pomodoroDict[date] = value + 1
-            
+        let xAxis  = self.barChartView.xAxis
+        xAxis.labelPosition = .bottom
+       
+        //xAxis.labelFont = //[UIFont systemFontOfSize:10.f];
+        xAxis.drawGridLinesEnabled = false
+        xAxis.granularity = 1.0; // only intervals of 1 day
+        xAxis.granularityEnabled = true
+        xAxis.labelCount = 7;
+        xAxis.valueFormatter = DayAxisValueFormatter(chart: self.barChartView)
+        
+        let marker = XYMarkerView(color: UIColor(white: 180/250, alpha: 1),
+                                  font: .systemFont(ofSize: 12),
+                                  textColor: .white,
+                                  insets: UIEdgeInsets(top: 8, left: 8, bottom: 20, right: 8),
+                                  xAxisValueFormatter: self.barChartView.xAxis.valueFormatter!)
+        marker.chartView = self.barChartView
+        marker.minimumSize = CGSize(width: 80, height: 40)
+        self.barChartView.marker = marker
+        
+        var dataEntries : [BarChartDataEntry] = []
+        
+        for i in 0..<dataPoints.count {
+            let dataEntry = BarChartDataEntry(x: values[i], y: Double(exactly: i) ?? 0)
+            dataEntries.append(dataEntry)
         }
         
-        let chartConfig = BarsChartConfig(valsAxisConfig: ChartAxisConfig(from: 0, to: 16, by: 1))
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Units Sold")
+        let chartData = BarChartData(dataSets: [chartDataSet])
+        chartData.barWidth = 0.9
+        self.barChartView.data = chartData
         
-        let frame = CGRect(x:0,y:70,width : 300,height:500)
-        let chart = BarsChart(frame: frame, chartConfig: chartConfig, xTitle: "Month", yTitle: "No. of Pomodoros", bars: [
-            ("A", 2),
-            ("B", 4.5),
-            ("C", 3),
-            ("D", 5.4),
-            ("E", 6.8),
-            ("F", 0.5)
-            ], color: UIColor.red, barWidth: 20
-        )
-        
-        self.view.addSubview(chart.view)
-        
-//        var i = 0.0
-//        var dates : [String] = []
-//        for (date,count) in pomodoroDict {
-//
-//           // let dataEntry = BarChartDataEntry(x: i, yValues: Double(exactly: count))
-//            let dataEntry = BarChartDataEntry(x: i, y: Double(exactly: count)!)
-//            data.append(dataEntry)
-//            dates.append(date)
-//            i += 1
-//        }
-//
-//        let chartDataSet = BarChartDataSet(values: data, label: "Pomodoro completed")
-//        let chartData = BarChartData(dataSets: [chartDataSet])
-//        self.chartView?.data = chartData
     }
+
     
 
     /*

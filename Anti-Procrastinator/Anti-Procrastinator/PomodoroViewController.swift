@@ -72,7 +72,7 @@ class PomodoroViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
-    func startBreakTimer(){
+    @objc func startBreakTimer(){
         self.breakTimeDuration = 300
         breakTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateBreakTimer), userInfo: nil, repeats: true)
     }
@@ -106,18 +106,14 @@ class PomodoroViewController: UIViewController {
             AudioServicesPlaySystemSound(1328);
             let alertView = SCLAlertView()
             alertView.addButton("Skip Break", target: self, selector: #selector(skipbreak))
-            alertView.addButton("Go for a Break!!"){
-                self.startBreakTimer()
-            }
-//            alertView.showSuccess("Hey Master!!!", subTitle: "Cool !!!Done with a Pomodoro!!!").setDismissBlock {
-//                //show break
-//                print("break time")
-//                self.startBreakTimer()
-//
+            alertView.addButton("Go for a break", target: self, selector: #selector(startBreakTimer))
+            alertView.addButton("Done", action: {
+                self.onBackClicked();
+            });
+            alertView.showSuccess("Well Done!!", subTitle: "What do you want to do now?");
+//            alertView.showSuccess("Well Done Dude!!!", subTitle: "You nailed a focused session").setDismissBlock {
+//                self.onBackClicked()
 //            }
-            alertView.showSuccess("Well Done Dude!!!", subTitle: "You nailed a focused session").setDismissBlock {
-                self.onBackClicked()
-            }
             resetPomodoro()
             //startPomodoroTimer()
         }

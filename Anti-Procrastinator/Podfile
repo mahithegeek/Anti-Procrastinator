@@ -7,7 +7,8 @@ target 'Anti-Procrastinator' do
 
   # Pods for Anti-Procrastinator
 pod 'SCLAlertView'
-use_frameworks!
-pod 'SwiftCharts', '~> 0.6.3'
+
+pod 'Charts'
+
 
 end

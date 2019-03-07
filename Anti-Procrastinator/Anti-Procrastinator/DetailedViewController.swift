@@ -30,13 +30,9 @@ class DetailedViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let dataCell = UITableViewCell(style: .default, reuseIdentifier: "DataCell")
-        let dateformatter = DateFormatter()
-        dateformatter.dateFormat = "dd-MMM-yyyy HH:mm:ss"
-        let dateStarted = pomodoroData?[indexPath.row].dateStarted
-        let dateCompleted = pomodoroData?[indexPath.row].dateCompleted
-        
-        let dateStartedString = dateformatter.string(from: dateStarted ?? Date(timeIntervalSince1970: 0))
-        let dateCompletedString = dateformatter.string(from: dateCompleted ?? Date(timeIntervalSince1970: 0))
+
+        let dateStartedString = getFormattedDateString(date: pomodoroData?[indexPath.row].dateStarted ??  Date(timeIntervalSince1970: 0))
+        let dateCompletedString = getFormattedDateString(date: pomodoroData?[indexPath.row].dateCompleted ??  Date(timeIntervalSince1970: 0))
         
         if(dateStartedString.contains("1970")) {
             dataCell.textLabel?.text = "\(dateCompletedString)"
@@ -46,6 +42,27 @@ class DetailedViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
         
         return dataCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dateStartedString = getFormattedDateString(date: pomodoroData?[indexPath.row].dateStarted ??  Date(timeIntervalSince1970: 0))
+        let dateCompletedString = getFormattedDateString(date: pomodoroData?[indexPath.row].dateCompleted ??  Date(timeIntervalSince1970: 0))
+        
+        
+        let sessionViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SessionTimeViewController") as! SessionTimeViewController
+        sessionViewController.startLabelText = dateStartedString
+        sessionViewController.endLabelText = dateCompletedString
+        self.show(sessionViewController, sender: nil)
+        
+    }
+    
+    
+    private func getFormattedDateString(date:Date)->String{
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "dd-MMM-yyyy HH:mm:ss"
+        let dateString = dateformatter.string(from: date )
+        return dateString
+        
     }
 
     /*

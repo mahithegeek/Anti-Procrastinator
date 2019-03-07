@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB1F8A935E97452AF2F54840 /* Pods_Anti_Procrastinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */; };
+		C806023122003529000EDED4 /* TaskInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806023022003529000EDED4 /* TaskInputViewController.swift */; };
+		C806023322003921000EDED4 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806023222003921000EDED4 /* TaskCardView.swift */; };
+		C806023522005F55000EDED4 /* TaskRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806023422005F55000EDED4 /* TaskRootViewController.swift */; };
 		C80D1C4421A7D5FE0082CBF3 /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */; };
 		C80D1C6921A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6721A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld */; };
 		C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */; };
@@ -20,12 +23,30 @@
 		C85B1FC821A6A8ED00EE267D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC621A6A8ED00EE267D /* LaunchScreen.storyboard */; };
 		C85B1FD021A6AD8F00EE267D /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */; };
 		C873DF9421BFBAEE006B62B7 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */; };
+		C88EEF9F221D548D000B2674 /* Player_by_Patric_Piemonte.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF94221D5482000B2674 /* Player_by_Patric_Piemonte.swift */; };
+		C88EEFA0221D548D000B2674 /* CardGroupSliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF96221D5482000B2674 /* CardGroupSliding.swift */; };
+		C88EEFA1221D548D000B2674 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF97221D5482000B2674 /* DetailViewController.swift */; };
+		C88EEFA2221D548D000B2674 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF98221D5482000B2674 /* Card.swift */; };
+		C88EEFA3221D548D000B2674 /* CardPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF99221D5482000B2674 /* CardPlayer.swift */; };
+		C88EEFA4221D548D000B2674 /* CardHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF9A221D5482000B2674 /* CardHighlight.swift */; };
+		C88EEFA5221D548D000B2674 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF9B221D5482000B2674 /* Animator.swift */; };
+		C88EEFA6221D548D000B2674 /* LayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF9C221D5482000B2674 /* LayoutHelper.swift */; };
+		C88EEFA7221D548D000B2674 /* CardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF9D221D5482000B2674 /* CardGroup.swift */; };
+		C88EEFA8221D548D000B2674 /* CardArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF9E221D5482000B2674 /* CardArticle.swift */; };
+		C89E9E52220989EE00CC4626 /* SessionTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */; };
 		C8CE2E6321B6D608000F21FE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */; };
+		C8E2728A21CA69A300C658FA /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2728921CA69A300C658FA /* DayAxisValueFormatter.swift */; };
+		C8E2728C21CA6A6800C658FA /* XYMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2728B21CA6A6800C658FA /* XYMarkerView.swift */; };
+		C8E2728E21CA6AA000C658FA /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2728D21CA6A9F00C658FA /* BalloonMarker.swift */; };
+		C8FA3460220ABAB8004B9460 /* CardRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA345F220ABAB8004B9460 /* CardRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anti_Procrastinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		438880D925E71FA57E123F31 /* Pods-Anti-Procrastinator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-Procrastinator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator.release.xcconfig"; sourceTree = "<group>"; };
+		C806023022003529000EDED4 /* TaskInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
+		C806023222003921000EDED4 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		C806023422005F55000EDED4 /* TaskRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRootViewController.swift; sourceTree = "<group>"; };
 		C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		C80D1C6821A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Anti-Procrastinator.xcdatamodel"; sourceTree = "<group>"; };
 		C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageLayer.swift; sourceTree = "<group>"; };
@@ -41,7 +62,22 @@
 		C85B1FC921A6A8ED00EE267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
 		C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		C88EEF94221D5482000B2674 /* Player_by_Patric_Piemonte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_by_Patric_Piemonte.swift; sourceTree = "<group>"; };
+		C88EEF96221D5482000B2674 /* CardGroupSliding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupSliding.swift; sourceTree = "<group>"; };
+		C88EEF97221D5482000B2674 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C88EEF98221D5482000B2674 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C88EEF99221D5482000B2674 /* CardPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPlayer.swift; sourceTree = "<group>"; };
+		C88EEF9A221D5482000B2674 /* CardHighlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHighlight.swift; sourceTree = "<group>"; };
+		C88EEF9B221D5482000B2674 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		C88EEF9C221D5482000B2674 /* LayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutHelper.swift; sourceTree = "<group>"; };
+		C88EEF9D221D5482000B2674 /* CardGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroup.swift; sourceTree = "<group>"; };
+		C88EEF9E221D5482000B2674 /* CardArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardArticle.swift; sourceTree = "<group>"; };
+		C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimeViewController.swift; sourceTree = "<group>"; };
 		C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		C8E2728921CA69A300C658FA /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
+		C8E2728B21CA6A6800C658FA /* XYMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYMarkerView.swift; sourceTree = "<group>"; };
+		C8E2728D21CA6A9F00C658FA /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		C8FA345F220ABAB8004B9460 /* CardRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRootViewController.swift; sourceTree = "<group>"; };
 		FE56A46143466004216D94C8 /* Pods-Anti-Procrastinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-Procrastinator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +113,7 @@
 		C85B1FB121A6A8EC00EE267D = {
 			isa = PBXGroup;
 			children = (
+				C88EEF92221D5482000B2674 /* Cards */,
 				C85B1FBC21A6A8EC00EE267D /* Anti-Procrastinator */,
 				C85B1FBB21A6A8EC00EE267D /* Products */,
 				894BE4E8D33F9080344A1287 /* Pods */,
@@ -95,6 +132,9 @@
 		C85B1FBC21A6A8EC00EE267D /* Anti-Procrastinator */ = {
 			isa = PBXGroup;
 			children = (
+				C8E2728D21CA6A9F00C658FA /* BalloonMarker.swift */,
+				C8E2728B21CA6A6800C658FA /* XYMarkerView.swift */,
+				C8E2728921CA69A300C658FA /* DayAxisValueFormatter.swift */,
 				C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */,
 				C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */,
 				C85B1FC121A6A8EC00EE267D /* Main.storyboard */,
@@ -109,8 +149,46 @@
 				C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */,
 				C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */,
 				C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */,
+				C806023022003529000EDED4 /* TaskInputViewController.swift */,
+				C806023222003921000EDED4 /* TaskCardView.swift */,
+				C806023422005F55000EDED4 /* TaskRootViewController.swift */,
+				C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */,
+				C8FA345F220ABAB8004B9460 /* CardRootViewController.swift */,
 			);
 			path = "Anti-Procrastinator";
+			sourceTree = "<group>";
+		};
+		C88EEF92221D5482000B2674 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				C88EEF93221D5482000B2674 /* Dependencies */,
+				C88EEF95221D5482000B2674 /* Sources */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		C88EEF93221D5482000B2674 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C88EEF94221D5482000B2674 /* Player_by_Patric_Piemonte.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C88EEF95221D5482000B2674 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C88EEF96221D5482000B2674 /* CardGroupSliding.swift */,
+				C88EEF97221D5482000B2674 /* DetailViewController.swift */,
+				C88EEF98221D5482000B2674 /* Card.swift */,
+				C88EEF99221D5482000B2674 /* CardPlayer.swift */,
+				C88EEF9A221D5482000B2674 /* CardHighlight.swift */,
+				C88EEF9B221D5482000B2674 /* Animator.swift */,
+				C88EEF9C221D5482000B2674 /* LayoutHelper.swift */,
+				C88EEF9D221D5482000B2674 /* CardGroup.swift */,
+				C88EEF9E221D5482000B2674 /* CardArticle.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,13 +285,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -227,16 +305,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88EEF9F221D548D000B2674 /* Player_by_Patric_Piemonte.swift in Sources */,
+				C88EEFA0221D548D000B2674 /* CardGroupSliding.swift in Sources */,
+				C88EEFA1221D548D000B2674 /* DetailViewController.swift in Sources */,
+				C88EEFA2221D548D000B2674 /* Card.swift in Sources */,
+				C88EEFA3221D548D000B2674 /* CardPlayer.swift in Sources */,
+				C88EEFA4221D548D000B2674 /* CardHighlight.swift in Sources */,
+				C88EEFA5221D548D000B2674 /* Animator.swift in Sources */,
+				C88EEFA6221D548D000B2674 /* LayoutHelper.swift in Sources */,
+				C88EEFA7221D548D000B2674 /* CardGroup.swift in Sources */,
+				C88EEFA8221D548D000B2674 /* CardArticle.swift in Sources */,
 				C80D1C6921A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld in Sources */,
 				C85B1FD021A6AD8F00EE267D /* PomodoroViewController.swift in Sources */,
 				C80D1C4421A7D5FE0082CBF3 /* PomodoroViewModel.swift in Sources */,
 				C80D1C7121A7FDC80082CBF3 /* ProductiveHoursViewController.swift in Sources */,
+				C8E2728E21CA6AA000C658FA /* BalloonMarker.swift in Sources */,
+				C89E9E52220989EE00CC4626 /* SessionTimeViewController.swift in Sources */,
 				C80D1C6F21A7F2310082CBF3 /* Pomodoro.swift in Sources */,
+				C806023122003529000EDED4 /* TaskInputViewController.swift in Sources */,
 				C8CE2E6321B6D608000F21FE /* DetailedViewController.swift in Sources */,
+				C8E2728A21CA69A300C658FA /* DayAxisValueFormatter.swift in Sources */,
+				C8FA3460220ABAB8004B9460 /* CardRootViewController.swift in Sources */,
 				C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */,
+				C806023322003921000EDED4 /* TaskCardView.swift in Sources */,
 				C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */,
 				C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */,
+				C806023522005F55000EDED4 /* TaskRootViewController.swift in Sources */,
 				C873DF9421BFBAEE006B62B7 /* ChartViewController.swift in Sources */,
+				C8E2728C21CA6A6800C658FA /* XYMarkerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAKRWMN9VH;
 				INFOPLIST_FILE = "Anti-Procrastinator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAKRWMN9VH;
 				INFOPLIST_FILE = "Anti-Procrastinator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
