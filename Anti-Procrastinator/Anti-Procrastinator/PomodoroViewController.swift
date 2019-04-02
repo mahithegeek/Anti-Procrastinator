@@ -10,11 +10,11 @@ import UIKit
 import SCLAlertView
 import AVFoundation
 
-enum TimerState : Int{
-    case running = 1
-    case paused = 2
-    case stopped = 3
-};
+//enum TimerState : Int{
+//    case running = 1
+//    case paused = 2
+//    case stopped = 3
+//};
 
 class PomodoroViewController: UIViewController {
 
@@ -26,6 +26,7 @@ class PomodoroViewController: UIViewController {
     var seconds = 1500
     var breakTimeDuration = 300
     var startTimeOfPomodoro : Date = Date()
+    var pomodoroViewModel : PomodoroViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,8 +38,12 @@ class PomodoroViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = backButton
         
         playButton?.imageView?.contentMode = .scaleAspectFit
-        startPomodoroTimer()
+        //startPomodoroTimer()
+        self.pomodoroViewModel.pomodoroTime.bindAndFire { [unowned self] in self.seconds = $0
+            self.updateTimer()
+        }
         
+        self.pomodoroViewModel.startPomodoroTimer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -66,11 +71,11 @@ class PomodoroViewController: UIViewController {
     }
     
     
-    func startPomodoroTimer(){
-        timerState = .running
-        self.startTimeOfPomodoro = Date()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
-    }
+//    func startPomodoroTimer(){
+//        timerState = .running
+//        self.startTimeOfPomodoro = Date()
+//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+//    }
     
     @objc func startBreakTimer(){
         self.breakTimeDuration = 300
@@ -120,7 +125,7 @@ class PomodoroViewController: UIViewController {
     }
     
     @objc func skipbreak(){
-        startPomodoroTimer()
+        //startPomodoroTimer()
     }
     
     @objc func updateBreakTimer(){
@@ -133,7 +138,7 @@ class PomodoroViewController: UIViewController {
             self.stopBreakTimer()
             AudioServicesPlaySystemSound(1320);
             SCLAlertView().showWarning("Hey Dude!!!", subTitle: "Break Time Over!!!").setDismissBlock {
-                self.startPomodoroTimer()
+                //self.startPomodoroTimer()
             }
         }
     }
@@ -157,7 +162,7 @@ class PomodoroViewController: UIViewController {
         else if (timerState == .paused){
             let buttonImage = UIImage(named: "Pause")
             self.playButton?.setImage(buttonImage, for: UIControl.State.normal)
-            startPomodoroTimer()
+            //startPomodoroTimer()
         }
         
     }
