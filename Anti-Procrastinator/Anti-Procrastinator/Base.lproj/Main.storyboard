@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-Qo-8yB">
-                                <rect key="frame" x="86" y="204.5" width="203" height="258"/>
+                                <rect key="frame" x="86" y="168.5" width="203" height="330"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1W-gu-kEC">
                                         <rect key="frame" x="0.0" y="0.0" width="203" height="42"/>
@@ -59,6 +59,16 @@
                                         </state>
                                         <connections>
                                             <segue destination="qBG-gC-JUd" kind="show" id="Yti-MS-kQy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-3E-x8B">
+                                        <rect key="frame" x="28" y="288" width="147" height="42"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Goal Tracker">
+                                            <color key="titleColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onGoalTrackerClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="ybA-FF-BBq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -140,6 +150,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdl-j5-Xgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1864.8" y="-110.19490254872565"/>
+        </scene>
+        <!--Goal Track View Controller-->
+        <scene sceneID="mrz-up-1dI">
+            <objects>
+                <viewController storyboardIdentifier="GoalTrackerViewController" id="LBo-nJ-guQ" customClass="GoalTrackViewController" customModule="Anti_Procrastinator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BZR-sC-h2G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="myw-5v-dbd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="152" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-8S-P8v">
+                                <rect key="frame" x="158" y="549" width="59.5" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="myw-5v-dbd" firstAttribute="top" secondItem="BZR-sC-h2G" secondAttribute="top" id="2sT-2t-pDR"/>
+                            <constraint firstItem="myw-5v-dbd" firstAttribute="leading" secondItem="cuc-fA-eJ1" secondAttribute="leading" id="FlP-S1-4FU"/>
+                            <constraint firstItem="myw-5v-dbd" firstAttribute="bottom" secondItem="cuc-fA-eJ1" secondAttribute="bottom" id="Kzc-HO-nTG"/>
+                            <constraint firstItem="KzY-8S-P8v" firstAttribute="centerX" secondItem="BZR-sC-h2G" secondAttribute="centerX" id="dYJ-zL-g5e"/>
+                            <constraint firstItem="myw-5v-dbd" firstAttribute="trailing" secondItem="cuc-fA-eJ1" secondAttribute="trailing" id="gnm-Yt-lbS"/>
+                            <constraint firstItem="cuc-fA-eJ1" firstAttribute="bottom" secondItem="KzY-8S-P8v" secondAttribute="bottom" constant="77" id="yEy-YF-XqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cuc-fA-eJ1"/>
+                    </view>
+                    <connections>
+                        <outlet property="daysLeft" destination="KzY-8S-P8v" id="ghh-Kv-f1Q"/>
+                        <outlet property="imageBG" destination="myw-5v-dbd" id="huQ-rh-Wr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aMr-MS-mY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2624.8000000000002" y="-236.13193403298354"/>
         </scene>
         <!--Task Input View Controller-->
         <scene sceneID="dfT-kd-NXS">

@@ -21,11 +21,11 @@ class HomeViewController: UIViewController {
         self.navigationItem.title = "Home"
     }
     
-    @IBAction func onStartPomodoroClicked() {
-        let uistoryBoard = UIStoryboard(name: "Main", bundle: nil)
-        let pomodoroVC = uistoryBoard.instantiateViewController(withIdentifier: "PomodoroViewController") as! PomodoroViewController
-        pomodoroVC.pomodoroViewModel = PomodoroViewModel()
-        self.show(pomodoroVC, sender: nil)
+    @IBAction func onGoalTrackerClicked(){
+        let goalTrackerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GoalTrackerViewController") as! GoalTrackViewController
+        goalTrackerVC.goalTrackerViewModel = GoalTrackerViewModel()
+        self.show(goalTrackerVC, sender: nil)
+        
     }
 
 }
