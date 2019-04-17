@@ -23,6 +23,9 @@
 		C85B1FC821A6A8ED00EE267D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC621A6A8ED00EE267D /* LaunchScreen.storyboard */; };
 		C85B1FD021A6AD8F00EE267D /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */; };
 		C873DF9421BFBAEE006B62B7 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */; };
+		C88D215A225357FD00361CA2 /* GoalTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D2159225357FD00361CA2 /* GoalTrackViewController.swift */; };
+		C88D215C2253582D00361CA2 /* GoalTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */; };
+		C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215D22535C9100361CA2 /* DynamicString.swift */; };
 		C88EEF9F221D548D000B2674 /* Player_by_Patric_Piemonte.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF94221D5482000B2674 /* Player_by_Patric_Piemonte.swift */; };
 		C88EEFA0221D548D000B2674 /* CardGroupSliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF96221D5482000B2674 /* CardGroupSliding.swift */; };
 		C88EEFA1221D548D000B2674 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF97221D5482000B2674 /* DetailViewController.swift */; };
@@ -62,6 +65,9 @@
 		C85B1FC921A6A8ED00EE267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
 		C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		C88D2159225357FD00361CA2 /* GoalTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackViewController.swift; sourceTree = "<group>"; };
+		C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerViewModel.swift; sourceTree = "<group>"; };
+		C88D215D22535C9100361CA2 /* DynamicString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicString.swift; sourceTree = "<group>"; };
 		C88EEF94221D5482000B2674 /* Player_by_Patric_Piemonte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_by_Patric_Piemonte.swift; sourceTree = "<group>"; };
 		C88EEF96221D5482000B2674 /* CardGroupSliding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupSliding.swift; sourceTree = "<group>"; };
 		C88EEF97221D5482000B2674 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 				C806023422005F55000EDED4 /* TaskRootViewController.swift */,
 				C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */,
 				C8FA345F220ABAB8004B9460 /* CardRootViewController.swift */,
+				C88D2159225357FD00361CA2 /* GoalTrackViewController.swift */,
+				C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */,
+				C88D215D22535C9100361CA2 /* DynamicString.swift */,
 			);
 			path = "Anti-Procrastinator";
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 				C88EEFA2221D548D000B2674 /* Card.swift in Sources */,
 				C88EEFA3221D548D000B2674 /* CardPlayer.swift in Sources */,
 				C88EEFA4221D548D000B2674 /* CardHighlight.swift in Sources */,
+				C88D215A225357FD00361CA2 /* GoalTrackViewController.swift in Sources */,
 				C88EEFA5221D548D000B2674 /* Animator.swift in Sources */,
 				C88EEFA6221D548D000B2674 /* LayoutHelper.swift in Sources */,
 				C88EEFA7221D548D000B2674 /* CardGroup.swift in Sources */,
@@ -325,11 +335,13 @@
 				C806023122003529000EDED4 /* TaskInputViewController.swift in Sources */,
 				C8CE2E6321B6D608000F21FE /* DetailedViewController.swift in Sources */,
 				C8E2728A21CA69A300C658FA /* DayAxisValueFormatter.swift in Sources */,
+				C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */,
 				C8FA3460220ABAB8004B9460 /* CardRootViewController.swift in Sources */,
 				C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */,
 				C806023322003921000EDED4 /* TaskCardView.swift in Sources */,
 				C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */,
 				C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */,
+				C88D215C2253582D00361CA2 /* GoalTrackerViewModel.swift in Sources */,
 				C806023522005F55000EDED4 /* TaskRootViewController.swift in Sources */,
 				C873DF9421BFBAEE006B62B7 /* ChartViewController.swift in Sources */,
 				C8E2728C21CA6A6800C658FA /* XYMarkerView.swift in Sources */,
