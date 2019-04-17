@@ -21,7 +21,12 @@ class HomeViewController: UIViewController {
         self.navigationItem.title = "Home"
     }
     
-    
+    @IBAction func onGoalTrackerClicked(){
+        let goalTrackerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GoalTrackerViewController") as! GoalTrackViewController
+        goalTrackerVC.goalTrackerViewModel = GoalTrackerViewModel()
+        self.show(goalTrackerVC, sender: nil)
+        
+    }
 
 }
 
