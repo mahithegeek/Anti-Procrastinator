@@ -8,32 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BB1F8A935E97452AF2F54840 /* Pods_Anti_Procrastinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */; };
+		C806023122003529000EDED4 /* TaskInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806023022003529000EDED4 /* TaskInputViewController.swift */; };
+		C806023322003921000EDED4 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806023222003921000EDED4 /* TaskCardView.swift */; };
+		C806023522005F55000EDED4 /* TaskRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806023422005F55000EDED4 /* TaskRootViewController.swift */; };
 		C80D1C4421A7D5FE0082CBF3 /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */; };
 		C80D1C6921A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6721A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld */; };
 		C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */; };
 		C80D1C6F21A7F2310082CBF3 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */; };
 		C80D1C7121A7FDC80082CBF3 /* ProductiveHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */; };
-		C848C42122674AC10096EBE8 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C848C41E22674AC10096EBE8 /* TaskCardView.swift */; };
-		C848C42222674AC10096EBE8 /* TaskRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C848C41F22674AC10096EBE8 /* TaskRootViewController.swift */; };
-		C848C42322674AC10096EBE8 /* TaskInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C848C42022674AC10096EBE8 /* TaskInputViewController.swift */; };
 		C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */; };
 		C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */; };
 		C85B1FC321A6A8EC00EE267D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC121A6A8EC00EE267D /* Main.storyboard */; };
 		C85B1FC521A6A8ED00EE267D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC421A6A8ED00EE267D /* Assets.xcassets */; };
 		C85B1FC821A6A8ED00EE267D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC621A6A8ED00EE267D /* LaunchScreen.storyboard */; };
 		C85B1FD021A6AD8F00EE267D /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */; };
-		C87F8B3D223122B7007BA708 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87F8B3B223122B7007BA708 /* Interface.storyboard */; };
-		C87F8B3F223122BA007BA708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87F8B3E223122BA007BA708 /* Assets.xcassets */; };
-		C87F8B46223122BA007BA708 /* Anti-Procrastinator-miniature Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C87F8B45223122BA007BA708 /* Anti-Procrastinator-miniature Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C87F8B4D223122BA007BA708 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F8B4C223122BA007BA708 /* ExtensionDelegate.swift */; };
-		C87F8B4F223122BA007BA708 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F8B4E223122BA007BA708 /* NotificationController.swift */; };
-		C87F8B51223122BB007BA708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C87F8B50223122BB007BA708 /* Assets.xcassets */; };
-		C87F8B56223122BB007BA708 /* Anti-Procrastinator-miniature.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C87F8B39223122B7007BA708 /* Anti-Procrastinator-miniature.app */; };
-		C87F8B60223125DC007BA708 /* PomodoroInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F8B5F223125DC007BA708 /* PomodoroInterfaceController.swift */; };
-		C8853B9922423CB7005054B0 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8853B9822423CB7005054B0 /* Dynamic.swift */; };
-		C8853B9F22424D96005054B0 /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */; };
-		C8853BA022424D9F005054B0 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8853B9822423CB7005054B0 /* Dynamic.swift */; };
-		C8853BA222424FFB005054B0 /* PomodoroTimerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8853BA122424FFB005054B0 /* PomodoroTimerInterfaceController.swift */; };
+		C873DF9421BFBAEE006B62B7 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */; };
+		C88D215A225357FD00361CA2 /* GoalTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D2159225357FD00361CA2 /* GoalTrackViewController.swift */; };
+		C88D215C2253582D00361CA2 /* GoalTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */; };
+		C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215D22535C9100361CA2 /* DynamicString.swift */; };
 		C88EEF9F221D548D000B2674 /* Player_by_Patric_Piemonte.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF94221D5482000B2674 /* Player_by_Patric_Piemonte.swift */; };
 		C88EEFA0221D548D000B2674 /* CardGroupSliding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF96221D5482000B2674 /* CardGroupSliding.swift */; };
 		C88EEFA1221D548D000B2674 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF97221D5482000B2674 /* DetailViewController.swift */; };
@@ -45,66 +37,25 @@
 		C88EEFA7221D548D000B2674 /* CardGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF9D221D5482000B2674 /* CardGroup.swift */; };
 		C88EEFA8221D548D000B2674 /* CardArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EEF9E221D5482000B2674 /* CardArticle.swift */; };
 		C89E9E52220989EE00CC4626 /* SessionTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */; };
-		C8AE6DB8223244FD00426E4E /* SCLAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AE6DB7223244FD00426E4E /* SCLAlertView.framework */; };
 		C8CE2E6321B6D608000F21FE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */; };
+		C8E2728A21CA69A300C658FA /* DayAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2728921CA69A300C658FA /* DayAxisValueFormatter.swift */; };
 		C8E2728C21CA6A6800C658FA /* XYMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2728B21CA6A6800C658FA /* XYMarkerView.swift */; };
+		C8E2728E21CA6AA000C658FA /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E2728D21CA6A9F00C658FA /* BalloonMarker.swift */; };
 		C8FA3460220ABAB8004B9460 /* CardRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FA345F220ABAB8004B9460 /* CardRootViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C87F8B47223122BA007BA708 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C85B1FB221A6A8EC00EE267D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C87F8B44223122BA007BA708;
-			remoteInfo = "Anti-Procrastinator-miniature Extension";
-		};
-		C87F8B54223122BB007BA708 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C85B1FB221A6A8EC00EE267D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C87F8B38223122B7007BA708;
-			remoteInfo = "Anti-Procrastinator-miniature";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C87F8B5C223122BB007BA708 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				C87F8B46223122BA007BA708 /* Anti-Procrastinator-miniature Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C87F8B5E223122BB007BA708 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				C87F8B56223122BB007BA708 /* Anti-Procrastinator-miniature.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anti_Procrastinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		438880D925E71FA57E123F31 /* Pods-Anti-Procrastinator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-Procrastinator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator.release.xcconfig"; sourceTree = "<group>"; };
+		C806023022003529000EDED4 /* TaskInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
+		C806023222003921000EDED4 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		C806023422005F55000EDED4 /* TaskRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRootViewController.swift; sourceTree = "<group>"; };
 		C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		C80D1C6821A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Anti-Procrastinator.xcdatamodel"; sourceTree = "<group>"; };
 		C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageLayer.swift; sourceTree = "<group>"; };
 		C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
 		C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductiveHoursViewController.swift; sourceTree = "<group>"; };
 		C83EAA2721BA532100B2222F /* Anti-Procrastinator 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Anti-Procrastinator 2.xcdatamodel"; sourceTree = "<group>"; };
-		C848C41E22674AC10096EBE8 /* TaskCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
-		C848C41F22674AC10096EBE8 /* TaskRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRootViewController.swift; sourceTree = "<group>"; };
-		C848C42022674AC10096EBE8 /* TaskInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskInputViewController.swift; sourceTree = "<group>"; };
 		C85B1FBA21A6A8EC00EE267D /* Anti-Procrastinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anti-Procrastinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -113,19 +64,10 @@
 		C85B1FC721A6A8ED00EE267D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85B1FC921A6A8ED00EE267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewController.swift; sourceTree = "<group>"; };
-		C87F8B39223122B7007BA708 /* Anti-Procrastinator-miniature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anti-Procrastinator-miniature.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C87F8B3C223122B7007BA708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		C87F8B3E223122BA007BA708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C87F8B40223122BA007BA708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C87F8B45223122BA007BA708 /* Anti-Procrastinator-miniature Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Anti-Procrastinator-miniature Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C87F8B4C223122BA007BA708 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		C87F8B4E223122BA007BA708 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		C87F8B50223122BB007BA708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C87F8B52223122BB007BA708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C87F8B53223122BB007BA708 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		C87F8B5F223125DC007BA708 /* PomodoroInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroInterfaceController.swift; sourceTree = "<group>"; };
-		C8853B9822423CB7005054B0 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		C8853BA122424FFB005054B0 /* PomodoroTimerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerInterfaceController.swift; sourceTree = "<group>"; };
+		C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		C88D2159225357FD00361CA2 /* GoalTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackViewController.swift; sourceTree = "<group>"; };
+		C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerViewModel.swift; sourceTree = "<group>"; };
+		C88D215D22535C9100361CA2 /* DynamicString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicString.swift; sourceTree = "<group>"; };
 		C88EEF94221D5482000B2674 /* Player_by_Patric_Piemonte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_by_Patric_Piemonte.swift; sourceTree = "<group>"; };
 		C88EEF96221D5482000B2674 /* CardGroupSliding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupSliding.swift; sourceTree = "<group>"; };
 		C88EEF97221D5482000B2674 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -137,34 +79,20 @@
 		C88EEF9D221D5482000B2674 /* CardGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroup.swift; sourceTree = "<group>"; };
 		C88EEF9E221D5482000B2674 /* CardArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardArticle.swift; sourceTree = "<group>"; };
 		C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimeViewController.swift; sourceTree = "<group>"; };
-		C8AE6DB7223244FD00426E4E /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		C8E2728921CA69A300C658FA /* DayAxisValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayAxisValueFormatter.swift; sourceTree = "<group>"; };
 		C8E2728B21CA6A6800C658FA /* XYMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYMarkerView.swift; sourceTree = "<group>"; };
+		C8E2728D21CA6A9F00C658FA /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
 		C8FA345F220ABAB8004B9460 /* CardRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRootViewController.swift; sourceTree = "<group>"; };
 		FE56A46143466004216D94C8 /* Pods-Anti-Procrastinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-Procrastinator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		87FA34E6BF3F6EA2A2D20341 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C85B1FB721A6A8EC00EE267D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8AE6DB8223244FD00426E4E /* SCLAlertView.framework in Frameworks */,
 				BB1F8A935E97452AF2F54840 /* Pods_Anti_Procrastinator.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C87F8B42223122BA007BA708 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +102,6 @@
 		0E4917CA3615DF2EB9D970CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C8AE6DB7223244FD00426E4E /* SCLAlertView.framework */,
 				1159D468BAF3B83A831E57D6 /* Pods_Anti_Procrastinator.framework */,
 			);
 			name = Frameworks;
@@ -189,30 +116,11 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		C848C41D22674AC10096EBE8 /* Cards */ = {
-			isa = PBXGroup;
-			children = (
-				C848C41E22674AC10096EBE8 /* TaskCardView.swift */,
-				C848C41F22674AC10096EBE8 /* TaskRootViewController.swift */,
-				C848C42022674AC10096EBE8 /* TaskInputViewController.swift */,
-			);
-			path = Cards;
-			sourceTree = "<group>";
-		};
-		C848C42422674AC70096EBE8 /* Charts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Charts;
-			sourceTree = "<group>";
-		};
 		C85B1FB121A6A8EC00EE267D = {
 			isa = PBXGroup;
 			children = (
 				C88EEF92221D5482000B2674 /* Cards */,
 				C85B1FBC21A6A8EC00EE267D /* Anti-Procrastinator */,
-				C87F8B3A223122B7007BA708 /* Anti-Procrastinator-miniature */,
-				C87F8B49223122BA007BA708 /* Anti-Procrastinator-miniature Extension */,
 				C85B1FBB21A6A8EC00EE267D /* Products */,
 				894BE4E8D33F9080344A1287 /* Pods */,
 				0E4917CA3615DF2EB9D970CB /* Frameworks */,
@@ -223,8 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				C85B1FBA21A6A8EC00EE267D /* Anti-Procrastinator.app */,
-				C87F8B39223122B7007BA708 /* Anti-Procrastinator-miniature.app */,
-				C87F8B45223122BA007BA708 /* Anti-Procrastinator-miniature Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,10 +138,9 @@
 		C85B1FBC21A6A8EC00EE267D /* Anti-Procrastinator */ = {
 			isa = PBXGroup;
 			children = (
-				C848C42422674AC70096EBE8 /* Charts */,
-				C848C41D22674AC10096EBE8 /* Cards */,
-				C8853B9722423C9E005054B0 /* ViewModels */,
+				C8E2728D21CA6A9F00C658FA /* BalloonMarker.swift */,
 				C8E2728B21CA6A6800C658FA /* XYMarkerView.swift */,
+				C8E2728921CA69A300C658FA /* DayAxisValueFormatter.swift */,
 				C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */,
 				C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */,
 				C85B1FC121A6A8EC00EE267D /* Main.storyboard */,
@@ -243,48 +148,23 @@
 				C85B1FC621A6A8ED00EE267D /* LaunchScreen.storyboard */,
 				C85B1FC921A6A8ED00EE267D /* Info.plist */,
 				C85B1FCF21A6AD8F00EE267D /* PomodoroViewController.swift */,
+				C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */,
 				C80D1C6721A7EE6E0082CBF3 /* Anti-Procrastinator.xcdatamodeld */,
 				C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */,
 				C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */,
 				C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */,
 				C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */,
+				C873DF9321BFBAEE006B62B7 /* ChartViewController.swift */,
+				C806023022003529000EDED4 /* TaskInputViewController.swift */,
+				C806023222003921000EDED4 /* TaskCardView.swift */,
+				C806023422005F55000EDED4 /* TaskRootViewController.swift */,
 				C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */,
 				C8FA345F220ABAB8004B9460 /* CardRootViewController.swift */,
+				C88D2159225357FD00361CA2 /* GoalTrackViewController.swift */,
+				C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */,
+				C88D215D22535C9100361CA2 /* DynamicString.swift */,
 			);
 			path = "Anti-Procrastinator";
-			sourceTree = "<group>";
-		};
-		C87F8B3A223122B7007BA708 /* Anti-Procrastinator-miniature */ = {
-			isa = PBXGroup;
-			children = (
-				C87F8B3B223122B7007BA708 /* Interface.storyboard */,
-				C87F8B3E223122BA007BA708 /* Assets.xcassets */,
-				C87F8B40223122BA007BA708 /* Info.plist */,
-			);
-			path = "Anti-Procrastinator-miniature";
-			sourceTree = "<group>";
-		};
-		C87F8B49223122BA007BA708 /* Anti-Procrastinator-miniature Extension */ = {
-			isa = PBXGroup;
-			children = (
-				C87F8B4C223122BA007BA708 /* ExtensionDelegate.swift */,
-				C87F8B4E223122BA007BA708 /* NotificationController.swift */,
-				C87F8B50223122BB007BA708 /* Assets.xcassets */,
-				C87F8B52223122BB007BA708 /* Info.plist */,
-				C87F8B53223122BB007BA708 /* PushNotificationPayload.apns */,
-				C87F8B5F223125DC007BA708 /* PomodoroInterfaceController.swift */,
-				C8853BA122424FFB005054B0 /* PomodoroTimerInterfaceController.swift */,
-			);
-			path = "Anti-Procrastinator-miniature Extension";
-			sourceTree = "<group>";
-		};
-		C8853B9722423C9E005054B0 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				C80D1C4321A7D5FE0082CBF3 /* PomodoroViewModel.swift */,
-				C8853B9822423CB7005054B0 /* Dynamic.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		C88EEF92221D5482000B2674 /* Cards */ = {
@@ -332,52 +212,15 @@
 				C85B1FB721A6A8EC00EE267D /* Frameworks */,
 				C85B1FB821A6A8EC00EE267D /* Resources */,
 				D0E60535855B1BCADA0D379B /* [CP] Embed Pods Frameworks */,
-				C87F8B5E223122BB007BA708 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C87F8B55223122BB007BA708 /* PBXTargetDependency */,
 			);
 			name = "Anti-Procrastinator";
 			productName = "Anti-Procrastinator";
 			productReference = C85B1FBA21A6A8EC00EE267D /* Anti-Procrastinator.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C87F8B38223122B7007BA708 /* Anti-Procrastinator-miniature */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C87F8B5D223122BB007BA708 /* Build configuration list for PBXNativeTarget "Anti-Procrastinator-miniature" */;
-			buildPhases = (
-				C87F8B37223122B7007BA708 /* Resources */,
-				C87F8B5C223122BB007BA708 /* Embed App Extensions */,
-				87FA34E6BF3F6EA2A2D20341 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C87F8B48223122BA007BA708 /* PBXTargetDependency */,
-			);
-			name = "Anti-Procrastinator-miniature";
-			productName = "Anti-Procrastinator-miniature";
-			productReference = C87F8B39223122B7007BA708 /* Anti-Procrastinator-miniature.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		C87F8B44223122BA007BA708 /* Anti-Procrastinator-miniature Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C87F8B5B223122BB007BA708 /* Build configuration list for PBXNativeTarget "Anti-Procrastinator-miniature Extension" */;
-			buildPhases = (
-				C87F8B41223122BA007BA708 /* Sources */,
-				C87F8B42223122BA007BA708 /* Frameworks */,
-				C87F8B43223122BA007BA708 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Anti-Procrastinator-miniature Extension";
-			productName = "Anti-Procrastinator-miniature Extension";
-			productReference = C87F8B45223122BA007BA708 /* Anti-Procrastinator-miniature Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -390,12 +233,6 @@
 				ORGANIZATIONNAME = nimma01;
 				TargetAttributes = {
 					C85B1FB921A6A8EC00EE267D = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					C87F8B38223122B7007BA708 = {
-						CreatedOnToolsVersion = 10.1;
-					};
-					C87F8B44223122BA007BA708 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -414,8 +251,6 @@
 			projectRoot = "";
 			targets = (
 				C85B1FB921A6A8EC00EE267D /* Anti-Procrastinator */,
-				C87F8B38223122B7007BA708 /* Anti-Procrastinator-miniature */,
-				C87F8B44223122BA007BA708 /* Anti-Procrastinator-miniature Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -428,23 +263,6 @@
 				C85B1FC821A6A8ED00EE267D /* LaunchScreen.storyboard in Resources */,
 				C85B1FC521A6A8ED00EE267D /* Assets.xcassets in Resources */,
 				C85B1FC321A6A8EC00EE267D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C87F8B37223122B7007BA708 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C87F8B3F223122BA007BA708 /* Assets.xcassets in Resources */,
-				C87F8B3D223122B7007BA708 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C87F8B43223122BA007BA708 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C87F8B51223122BB007BA708 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,13 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C88EEF9F221D548D000B2674 /* Player_by_Patric_Piemonte.swift in Sources */,
-				C8853B9922423CB7005054B0 /* Dynamic.swift in Sources */,
 				C88EEFA0221D548D000B2674 /* CardGroupSliding.swift in Sources */,
 				C88EEFA1221D548D000B2674 /* DetailViewController.swift in Sources */,
 				C88EEFA2221D548D000B2674 /* Card.swift in Sources */,
 				C88EEFA3221D548D000B2674 /* CardPlayer.swift in Sources */,
-				C848C42222674AC10096EBE8 /* TaskRootViewController.swift in Sources */,
 				C88EEFA4221D548D000B2674 /* CardHighlight.swift in Sources */,
+				C88D215A225357FD00361CA2 /* GoalTrackViewController.swift in Sources */,
 				C88EEFA5221D548D000B2674 /* Animator.swift in Sources */,
 				C88EEFA6221D548D000B2674 /* LayoutHelper.swift in Sources */,
 				C88EEFA7221D548D000B2674 /* CardGroup.swift in Sources */,
@@ -512,46 +329,26 @@
 				C85B1FD021A6AD8F00EE267D /* PomodoroViewController.swift in Sources */,
 				C80D1C4421A7D5FE0082CBF3 /* PomodoroViewModel.swift in Sources */,
 				C80D1C7121A7FDC80082CBF3 /* ProductiveHoursViewController.swift in Sources */,
+				C8E2728E21CA6AA000C658FA /* BalloonMarker.swift in Sources */,
 				C89E9E52220989EE00CC4626 /* SessionTimeViewController.swift in Sources */,
 				C80D1C6F21A7F2310082CBF3 /* Pomodoro.swift in Sources */,
+				C806023122003529000EDED4 /* TaskInputViewController.swift in Sources */,
 				C8CE2E6321B6D608000F21FE /* DetailedViewController.swift in Sources */,
+				C8E2728A21CA69A300C658FA /* DayAxisValueFormatter.swift in Sources */,
+				C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */,
 				C8FA3460220ABAB8004B9460 /* CardRootViewController.swift in Sources */,
 				C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */,
+				C806023322003921000EDED4 /* TaskCardView.swift in Sources */,
 				C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */,
-				C848C42322674AC10096EBE8 /* TaskInputViewController.swift in Sources */,
-				C848C42122674AC10096EBE8 /* TaskCardView.swift in Sources */,
 				C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */,
+				C88D215C2253582D00361CA2 /* GoalTrackerViewModel.swift in Sources */,
+				C806023522005F55000EDED4 /* TaskRootViewController.swift in Sources */,
+				C873DF9421BFBAEE006B62B7 /* ChartViewController.swift in Sources */,
 				C8E2728C21CA6A6800C658FA /* XYMarkerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C87F8B41223122BA007BA708 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8853BA222424FFB005054B0 /* PomodoroTimerInterfaceController.swift in Sources */,
-				C87F8B4F223122BA007BA708 /* NotificationController.swift in Sources */,
-				C8853BA022424D9F005054B0 /* Dynamic.swift in Sources */,
-				C8853B9F22424D96005054B0 /* PomodoroViewModel.swift in Sources */,
-				C87F8B60223125DC007BA708 /* PomodoroInterfaceController.swift in Sources */,
-				C87F8B4D223122BA007BA708 /* ExtensionDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C87F8B48223122BA007BA708 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C87F8B44223122BA007BA708 /* Anti-Procrastinator-miniature Extension */;
-			targetProxy = C87F8B47223122BA007BA708 /* PBXContainerItemProxy */;
-		};
-		C87F8B55223122BB007BA708 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C87F8B38223122B7007BA708 /* Anti-Procrastinator-miniature */;
-			targetProxy = C87F8B54223122BB007BA708 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C85B1FC121A6A8EC00EE267D /* Main.storyboard */ = {
@@ -568,14 +365,6 @@
 				C85B1FC721A6A8ED00EE267D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		C87F8B3B223122B7007BA708 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C87F8B3C223122B7007BA708 /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -705,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAKRWMN9VH;
 				INFOPLIST_FILE = "Anti-Procrastinator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -725,7 +514,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RAKRWMN9VH;
 				INFOPLIST_FILE = "Anti-Procrastinator/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -734,86 +523,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C87F8B57223122BB007BA708 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RAKRWMN9VH;
-				IBSC_MODULE = Anti_Procrastinator_miniature_Extension;
-				INFOPLIST_FILE = "Anti-Procrastinator-miniature/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ca..Anti-Procrastinator.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
-			};
-			name = Debug;
-		};
-		C87F8B58223122BB007BA708 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RAKRWMN9VH;
-				IBSC_MODULE = Anti_Procrastinator_miniature_Extension;
-				INFOPLIST_FILE = "Anti-Procrastinator-miniature/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ca..Anti-Procrastinator.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
-			};
-			name = Release;
-		};
-		C87F8B59223122BB007BA708 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Anti-Procrastinator-miniature Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ca..Anti-Procrastinator.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
-			};
-			name = Debug;
-		};
-		C87F8B5A223122BB007BA708 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Anti-Procrastinator-miniature Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ca..Anti-Procrastinator.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.1;
 			};
 			name = Release;
 		};
@@ -834,24 +543,6 @@
 			buildConfigurations = (
 				C85B1FCD21A6A8ED00EE267D /* Debug */,
 				C85B1FCE21A6A8ED00EE267D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C87F8B5B223122BB007BA708 /* Build configuration list for PBXNativeTarget "Anti-Procrastinator-miniature Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C87F8B59223122BB007BA708 /* Debug */,
-				C87F8B5A223122BB007BA708 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C87F8B5D223122BB007BA708 /* Build configuration list for PBXNativeTarget "Anti-Procrastinator-miniature" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C87F8B57223122BB007BA708 /* Debug */,
-				C87F8B58223122BB007BA708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
