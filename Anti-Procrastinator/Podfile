@@ -8,7 +8,7 @@ target 'Anti-Procrastinator' do
   # Pods for Anti-Procrastinator
 pod 'SCLAlertView'
 
-pod 'Charts'
+
 
 
 end
