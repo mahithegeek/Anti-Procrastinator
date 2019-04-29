@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/PomodoroViewController.swift"
-            timestampString = "574770695.096764"
+            timestampString = "575892136.205744"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/PomodoroViewController.swift"
-            timestampString = "574770695.096844"
+            timestampString = "575892136.205811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/PomodoroViewController.swift"
-            timestampString = "574770695.096964"
+            timestampString = "575892136.205906"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/TaskRootViewController.swift"
-            timestampString = "571055383.9484529"
+            timestampString = "575889799.001237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/TaskRootViewController.swift"
-            timestampString = "571055383.948534"
+            timestampString = "575889799.001341"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/TaskRootViewController.swift"
-            timestampString = "571055383.9485821"
+            timestampString = "575889799.001386"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/TaskRootViewController.swift"
-            timestampString = "571055383.948634"
+            timestampString = "575889799.001424"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/PomodoroViewController.swift"
-            timestampString = "574770695.097086"
+            timestampString = "575892136.2060111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/PomodoroViewController.swift"
-            timestampString = "574770695.097137"
+            timestampString = "575892136.206058"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "112"
@@ -255,8 +255,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "startPomodoroTimer()"
-            landmarkType = "7">
+            landmarkName = "PomodoroViewModel"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -266,7 +266,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/PomodoroViewController.swift"
-            timestampString = "574770695.097272"
+            timestampString = "575892136.206177"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -298,7 +298,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Anti-Procrastinator/PomodoroViewController.swift"
-            timestampString = "574770695.097369"
+            timestampString = "575892136.206283"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -320,6 +320,38 @@
             startingLineNumber = "33"
             endingLineNumber = "33"
             landmarkName = "onPomoClicked()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anti-Procrastinator/GoalTrackViewController.swift"
+            timestampString = "576066587.0583889"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "addProgressView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Anti-Procrastinator/GoalTrackViewController.swift"
+            timestampString = "576066587.058763"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "addProgressView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
