@@ -41,6 +41,39 @@ class ProductiveHoursViewController: UIViewController {
     private func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
+    
+    
+    @IBAction func onExportClicked(){
+        let pomodoroData = StorageLayer.sharedInstance.getPomodoroRecords()
+        let exportDataObject = formatData(pomodoroObject: pomodoroData)
+        
+        
+        DataExporter().exportData(data: exportDataObject, completion: {completed,error in
+            if(!completed){
+                //show error
+            }
+        });
+    }
+    
+    private func formatData(pomodoroObject:[Pomodoro])->[Any]{
+        
+        var pomodoroDataFormatted : [Any] = []
+        for pomodoroData in pomodoroObject {
+            let dateStartedString = getFormattedDateString(date:pomodoroData .dateStarted ??  Date(timeIntervalSince1970: 0))
+            let dateCompletedString = getFormattedDateString(date: pomodoroData.dateCompleted ??  Date(timeIntervalSince1970: 0))
+            let tempData = [dateStartedString,dateCompletedString]
+            pomodoroDataFormatted.append(tempData)
+        }
+        return pomodoroDataFormatted
+    }
+    
+    private func getFormattedDateString(date:Date)->String{
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "dd-MMM-yyyy HH:mm:ss"
+        let dateString = dateformatter.string(from: date )
+        return dateString
+        
+    }
 
     /*
     // MARK: - Navigation

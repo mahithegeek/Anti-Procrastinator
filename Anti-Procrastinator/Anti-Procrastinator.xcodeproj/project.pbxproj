@@ -16,6 +16,8 @@
 		C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */; };
 		C80D1C6F21A7F2310082CBF3 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */; };
 		C80D1C7121A7FDC80082CBF3 /* ProductiveHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */; };
+		C831BE3A2276FDE900C542FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C831BE392276FDE800C542FD /* GoogleService-Info.plist */; };
+		C849A332227898B600CF7D4F /* GSheetExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C849A331227898B600CF7D4F /* GSheetExportViewController.swift */; };
 		C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */; };
 		C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */; };
 		C85B1FC321A6A8EC00EE267D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC121A6A8EC00EE267D /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		C88D215C2253582D00361CA2 /* GoalTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */; };
 		C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215D22535C9100361CA2 /* DynamicString.swift */; };
 		C89E9E52220989EE00CC4626 /* SessionTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */; };
+		C8C77E5D22A52AE2007914BD /* DataExporterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C77E5C22A52AE2007914BD /* DataExporterProtocol.swift */; };
+		C8C77E5F22A565BB007914BD /* DataExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C77E5E22A565BB007914BD /* DataExporter.swift */; };
 		C8CE2E6321B6D608000F21FE /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +44,9 @@
 		C80D1C6A21A7F0000082CBF3 /* StorageLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageLayer.swift; sourceTree = "<group>"; };
 		C80D1C6E21A7F2310082CBF3 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
 		C80D1C7021A7FDC80082CBF3 /* ProductiveHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductiveHoursViewController.swift; sourceTree = "<group>"; };
+		C831BE392276FDE800C542FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C83EAA2721BA532100B2222F /* Anti-Procrastinator 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Anti-Procrastinator 2.xcdatamodel"; sourceTree = "<group>"; };
+		C849A331227898B600CF7D4F /* GSheetExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSheetExportViewController.swift; sourceTree = "<group>"; };
 		C85B1FBA21A6A8EC00EE267D /* Anti-Procrastinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Anti-Procrastinator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTrackerViewModel.swift; sourceTree = "<group>"; };
 		C88D215D22535C9100361CA2 /* DynamicString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicString.swift; sourceTree = "<group>"; };
 		C89E9E51220989EE00CC4626 /* SessionTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTimeViewController.swift; sourceTree = "<group>"; };
+		C8C77E5C22A52AE2007914BD /* DataExporterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExporterProtocol.swift; sourceTree = "<group>"; };
+		C8C77E5E22A565BB007914BD /* DataExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExporter.swift; sourceTree = "<group>"; };
 		C8CE2E6221B6D608000F21FE /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		FE56A46143466004216D94C8 /* Pods-Anti-Procrastinator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anti-Procrastinator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +115,7 @@
 		C85B1FBC21A6A8EC00EE267D /* Anti-Procrastinator */ = {
 			isa = PBXGroup;
 			children = (
+				C831BE392276FDE800C542FD /* GoogleService-Info.plist */,
 				C85B1FBD21A6A8EC00EE267D /* AppDelegate.swift */,
 				C85B1FBF21A6A8EC00EE267D /* HomeViewController.swift */,
 				C85B1FC121A6A8EC00EE267D /* Main.storyboard */,
@@ -127,6 +136,9 @@
 				C88D2159225357FD00361CA2 /* GoalTrackViewController.swift */,
 				C88D215B2253582D00361CA2 /* GoalTrackerViewModel.swift */,
 				C88D215D22535C9100361CA2 /* DynamicString.swift */,
+				C849A331227898B600CF7D4F /* GSheetExportViewController.swift */,
+				C8C77E5C22A52AE2007914BD /* DataExporterProtocol.swift */,
+				C8C77E5E22A565BB007914BD /* DataExporter.swift */,
 			);
 			path = "Anti-Procrastinator";
 			sourceTree = "<group>";
@@ -143,6 +155,7 @@
 				C85B1FB721A6A8EC00EE267D /* Frameworks */,
 				C85B1FB821A6A8EC00EE267D /* Resources */,
 				D0E60535855B1BCADA0D379B /* [CP] Embed Pods Frameworks */,
+				049C173070FC92EBBAAF1BED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C85B1FC821A6A8ED00EE267D /* LaunchScreen.storyboard in Resources */,
+				C831BE3A2276FDE900C542FD /* GoogleService-Info.plist in Resources */,
 				C85B1FC521A6A8ED00EE267D /* Assets.xcassets in Resources */,
 				C85B1FC321A6A8EC00EE267D /* Main.storyboard in Resources */,
 			);
@@ -200,6 +214,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		049C173070FC92EBBAAF1BED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		20518504906272169AF7A5E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,10 +257,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Anti-Procrastinator/Pods-Anti-Procrastinator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,12 +288,15 @@
 				C80D1C7121A7FDC80082CBF3 /* ProductiveHoursViewController.swift in Sources */,
 				C89E9E52220989EE00CC4626 /* SessionTimeViewController.swift in Sources */,
 				C80D1C6F21A7F2310082CBF3 /* Pomodoro.swift in Sources */,
+				C8C77E5F22A565BB007914BD /* DataExporter.swift in Sources */,
 				C806023122003529000EDED4 /* TaskInputViewController.swift in Sources */,
+				C8C77E5D22A52AE2007914BD /* DataExporterProtocol.swift in Sources */,
 				C8CE2E6321B6D608000F21FE /* DetailedViewController.swift in Sources */,
 				C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */,
 				C80D1C6B21A7F0000082CBF3 /* StorageLayer.swift in Sources */,
 				C806023322003921000EDED4 /* TaskCardView.swift in Sources */,
 				C85B1FC021A6A8EC00EE267D /* HomeViewController.swift in Sources */,
+				C849A332227898B600CF7D4F /* GSheetExportViewController.swift in Sources */,
 				C85B1FBE21A6A8EC00EE267D /* AppDelegate.swift in Sources */,
 				C88D215C2253582D00361CA2 /* GoalTrackerViewModel.swift in Sources */,
 				C806023522005F55000EDED4 /* TaskRootViewController.swift in Sources */,
@@ -413,7 +454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ca..Anti-Procrastinator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ca.Anti-Procrastinator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,7 +474,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ca..Anti-Procrastinator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ca.Anti-Procrastinator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
