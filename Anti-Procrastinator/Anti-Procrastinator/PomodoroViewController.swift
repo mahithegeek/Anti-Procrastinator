@@ -23,8 +23,8 @@ class PomodoroViewController: UIViewController {
     var timer = Timer()
     var breakTimer = Timer()
     var timerState : TimerState = .stopped
-    var seconds = 1500
-    var breakTimeDuration = 300
+    var seconds = 3//1500
+    var breakTimeDuration = 1//300
     var startTimeOfPomodoro : Date = Date()
     override func viewDidLoad() {
         super.viewDidLoad()
