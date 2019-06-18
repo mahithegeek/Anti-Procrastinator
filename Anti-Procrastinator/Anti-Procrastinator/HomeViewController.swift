@@ -8,17 +8,21 @@
 
 import UIKit
 
+
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var pomodoroButton : UIButton?
     @IBOutlet weak var productiveHours : UIButton?
     @IBOutlet weak var funHours : UIButton?
     @IBOutlet weak var taskInput : UIButton?
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.title = "Home"
+        
     }
     
     @IBAction func onGoalTrackerClicked(){
@@ -27,6 +31,7 @@ class HomeViewController: UIViewController {
         self.show(goalTrackerVC, sender: nil)
         
     }
+    
 
 }
 

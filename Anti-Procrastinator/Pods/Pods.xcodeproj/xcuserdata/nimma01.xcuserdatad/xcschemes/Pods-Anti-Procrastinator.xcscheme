@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5A54760220C962905B4BEBBEA3B406C"
+               BlueprintIdentifier = "69E9FEE2F4BFC7009B9A9C2E8F6D67A6"
                BuildableName = "Pods_Anti_Procrastinator.framework"
                BlueprintName = "Pods-Anti-Procrastinator"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B5A54760220C962905B4BEBBEA3B406C"
+            BlueprintIdentifier = "69E9FEE2F4BFC7009B9A9C2E8F6D67A6"
             BuildableName = "Pods_Anti_Procrastinator.framework"
             BlueprintName = "Pods-Anti-Procrastinator"
             ReferencedContainer = "container:Pods.xcodeproj">
