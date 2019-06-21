@@ -25,6 +25,12 @@ class HomeViewController: UIViewController {
         
     }
     
+    @IBAction func onPomodoroButtonClicked() {
+        let pomodoroVC = UIStoryboard(name:"Main",bundle: nil).instantiateViewController(withIdentifier: "pomodorovc") as! PomodoroViewController
+        pomodoroVC.viewModel = PomodoroViewModel()
+        self.show(pomodoroVC, sender: nil)
+    }
+    
     @IBAction func onGoalTrackerClicked(){
         let goalTrackerVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GoalTrackerViewController") as! GoalTrackViewController
         goalTrackerVC.goalTrackerViewModel = GoalTrackerViewModel()

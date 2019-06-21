@@ -31,7 +31,7 @@
                                             <color key="titleColor" red="0.98198672279999999" green="0.98187807199999999" blue="0.94775196399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="dae-zw-nVH" kind="show" id="Ytv-Ve-lYi"/>
+                                            <action selector="onPomodoroButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPC-zA-xqh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYZ-yN-um2">
@@ -100,7 +100,7 @@
         <!--Pomodoro View Controller-->
         <scene sceneID="iOH-uZ-82c">
             <objects>
-                <viewController id="dae-zw-nVH" customClass="PomodoroViewController" customModule="Anti_Procrastinator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pomodorovc" id="dae-zw-nVH" customClass="PomodoroViewController" customModule="Anti_Procrastinator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pCO-NH-oPO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
