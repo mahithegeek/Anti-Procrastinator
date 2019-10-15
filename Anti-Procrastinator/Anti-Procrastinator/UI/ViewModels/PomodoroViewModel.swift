@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 protocol pomodoroViewModelProtocol : AnyObject {
+    var secondsString : Observable<String> {get}
     func onPomodoroCompleted()
     func onBreakTimeCompleted()
 }
@@ -35,12 +36,10 @@ class PomodoroViewModel {
     var timerState : TimerState = .stopped 
     var seconds = pomodoroTimeConstant
     var breakTime = breakTimeConstant
-    var secondsString : DynamicString
     var startTimeOfPomodoro : Date = Date()
     weak var delegate : pomodoroViewModelProtocol?
     
     init(){
-        secondsString = DynamicString("1500")
     }
     
     
@@ -88,25 +87,18 @@ class PomodoroViewModel {
     @objc func updateBreakTimer(){
         if(self.breakTime > 0){
             self.breakTime = self.breakTime  - 1
-            //self.updateLabelWithTimeLeft(self.breakTimeDuration)
-            self.secondsString.value = String(self.breakTime)
+            self.delegate?.secondsString.value = formatSecondsIntoString(seconds: self.breakTime)
+            
         }
         else{
             self.stopBreakTimer()
-//            AudioServicesPlaySystemSound(1320);
-//            SCLAlertView().showWarning("Hey Dude!!!", subTitle: "Break Time Over!!!").setDismissBlock {
-//                self.startPomodoroTimer()
-//            }
         }
     }
     
     @objc func updateTimer(){
         if(self.seconds > 0){
             self.seconds = self.seconds - 1
-            let minutes = self.seconds / 60
-            let secondsRemaining = self.seconds - (minutes * 60)
-           // timerLabel?.text = timeLeft//String(format: "%d : %02d", minutes,secondsRemaining)
-            self.secondsString.value = String(format: "%d : %02d", minutes,secondsRemaining)
+            self.delegate?.secondsString.value = formatSecondsIntoString(seconds: self.seconds)
         }
         else{
             stopPomodoroTimer()
@@ -126,9 +118,10 @@ class PomodoroViewModel {
             self.delegate?.onPomodoroCompleted()
             
             resetPomodoro()
-            //startPomodoroTimer()
         }
     }
+    
+    //MARK: -  Private methods
     
     private func resetPomodoro(){
         self.seconds = 1500
@@ -141,6 +134,12 @@ class PomodoroViewModel {
     
     private func stopBreakTimer(){
         self.breakTimer.invalidate()
+    }
+    
+    private func formatSecondsIntoString(seconds : Int)->String {
+        let minutes = seconds / 60
+        let secondsRemaining = seconds - (minutes * 60)
+        return String(format: "%d : %02d", minutes,secondsRemaining)
     }
     
     

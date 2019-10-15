@@ -17,7 +17,7 @@
 		C85B1FC321A6A8EC00EE267D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC121A6A8EC00EE267D /* Main.storyboard */; };
 		C85B1FC521A6A8ED00EE267D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC421A6A8ED00EE267D /* Assets.xcassets */; };
 		C85B1FC821A6A8ED00EE267D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85B1FC621A6A8ED00EE267D /* LaunchScreen.storyboard */; };
-		C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215D22535C9100361CA2 /* DynamicString.swift */; };
+		C88D215E22535C9100361CA2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D215D22535C9100361CA2 /* Observable.swift */; };
 		C8C77E5D22A52AE2007914BD /* DataExporterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C77E5C22A52AE2007914BD /* DataExporterProtocol.swift */; };
 		C8C77E5F22A565BB007914BD /* DataExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C77E5E22A565BB007914BD /* DataExporter.swift */; };
 		C8DC4D4922BB829D0086136B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DC4D4522BB829D0086136B /* HomeViewController.swift */; };
@@ -48,7 +48,7 @@
 		C85B1FC421A6A8ED00EE267D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C85B1FC721A6A8ED00EE267D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85B1FC921A6A8ED00EE267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C88D215D22535C9100361CA2 /* DynamicString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicString.swift; sourceTree = "<group>"; };
+		C88D215D22535C9100361CA2 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C8C77E5C22A52AE2007914BD /* DataExporterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExporterProtocol.swift; sourceTree = "<group>"; };
 		C8C77E5E22A565BB007914BD /* DataExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExporter.swift; sourceTree = "<group>"; };
 		C8DC4D4522BB829D0086136B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		C8DC4D5D22BB84AB0086136B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				C88D215D22535C9100361CA2 /* DynamicString.swift */,
+				C88D215D22535C9100361CA2 /* Observable.swift */,
 				C8C77E5C22A52AE2007914BD /* DataExporterProtocol.swift */,
 			);
 			path = Protocols;
@@ -347,7 +347,7 @@
 				C8DC4D5622BB83F00086136B /* SessionTimeViewController.swift in Sources */,
 				C8DC4D5022BB83E70086136B /* GoalTrackerViewModel.swift in Sources */,
 				C8DC4D5C22BB849F0086136B /* Pomodoro.swift in Sources */,
-				C88D215E22535C9100361CA2 /* DynamicString.swift in Sources */,
+				C88D215E22535C9100361CA2 /* Observable.swift in Sources */,
 				C8DC4D4A22BB829D0086136B /* ProductiveHoursViewController.swift in Sources */,
 				C8DC4D5422BB83F00086136B /* GoalTrackViewController.swift in Sources */,
 				C8DC4D4C22BB829D0086136B /* DetailedViewController.swift in Sources */,

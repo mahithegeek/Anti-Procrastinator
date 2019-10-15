@@ -7,21 +7,21 @@
 //
 
 import Foundation
-class DynamicString {
-    typealias Listener = (String) -> Void
+class Observable <T>{
+    typealias Listener = (T) -> Void
     var listener : Listener?
     
     func bind(listener : Listener?) {
         self.listener = listener
     }
     
-    var value : String {
+    var value : T {
         didSet {
             listener?(value)
         }
     }
     
-    init(_ v:String) {
+    init(_ v:T) {
         value = v
     }
     

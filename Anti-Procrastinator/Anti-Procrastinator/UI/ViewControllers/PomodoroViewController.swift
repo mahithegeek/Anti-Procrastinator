@@ -12,12 +12,18 @@ import AVFoundation
 
 
 class PomodoroViewController: UIViewController,pomodoroViewModelProtocol {
-
+    var secondsString: Observable<String>
     
     @IBOutlet weak var timerLabel : UILabel?
     @IBOutlet weak var playButton : UIButton?
     
     var viewModel : PomodoroViewModel!
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        self.secondsString = Observable("1500")
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +34,11 @@ class PomodoroViewController: UIViewController,pomodoroViewModelProtocol {
         let backButtonImage = UIImage(named: "Back")
         let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(onBackClicked))
         self.navigationItem.leftBarButtonItem = backButton
-        
         playButton?.imageView?.contentMode = .scaleAspectFit
+        
         self.viewModel.delegate = self
         self.viewModel.viewLoaded()
-        self.viewModel.secondsString.bind(listener: {value in self.updateLabelWithTimeLeft(value)})
+        self.secondsString.bind(listener: {value in self.updateLabelWithTimeLeft(value)})
         
     }
     
@@ -68,7 +74,6 @@ class PomodoroViewController: UIViewController,pomodoroViewModelProtocol {
     @objc func startBreakTimer(){
         self.viewModel.startBreak()
     }
-    
     
     func updateLabelWithTimeLeft(_ timeLeft:String){
         timerLabel?.text = timeLeft
@@ -108,7 +113,6 @@ class PomodoroViewController: UIViewController,pomodoroViewModelProtocol {
     func onBreakTimeCompleted() {
         AudioServicesPlaySystemSound(1320);
         SCLAlertView().showWarning("Hey Dude!!!", subTitle: "Break Time Over!!!").setDismissBlock {
-            //self.startPomodoroTimer()
         }
     }
     

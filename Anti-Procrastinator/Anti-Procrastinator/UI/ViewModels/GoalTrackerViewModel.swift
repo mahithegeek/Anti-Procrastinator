@@ -9,11 +9,11 @@
 import UIKit
 
 class GoalTrackerViewModel: NSObject {
-    var percentage : DynamicString
+    var percentage : Observable<String>
     let bufferDays = 30
     
     override init(){
-        percentage = DynamicString("152")
+        percentage = Observable("152")
         super.init()
     }
     
